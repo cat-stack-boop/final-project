@@ -7,6 +7,329 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+lloyd-cards
+     <link rel="stylesheet" href="styles.css">
+    <title>Lloyd task planner</title>
+
+
+
+
+
+
+
+  </head>
+  <body>
+    <h1 class="text-center" style="color:#a85b18">Planify- Task planner</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+
+
+
+<div class="container">
+
+    <form>
+        <div class="form-group ">
+          <label for="exampleFormControlInput1">Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First and last name">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Description</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="please describe the task to be worked on">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Assigned to</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name of the developer to work on this task">
+          </div>
+          <div class="form-group ">
+            <label for="exampleFormControlInput1">Due Date</label>
+            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="[dd/mm/yyyy]">
+          </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Status</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>TODO</option>
+            <option>IN PROGRESS</option>
+            <option>REVIEW</option>
+            <option>DONE</option>
+            
+          </select>
+        </div>
+        <button class="btn btn-danger">Submit</button>
+   
+      </form>
+
+    </div>
+    
+   <hr>
+
+    
+  <!--<div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-header text-white bg-danger">
+          TODO
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+      
+    </div>
+    <div class="col-sm-3">
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-header bg-warning text-white">
+          IN PROGRESS
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="col-sm-3">
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-header bg-primary text-white">
+            REVIEW
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+        </div>
+        <div class="col-sm-3">
+
+          <div class="card" style="width: 18rem;">
+            <div class="card-header bg-success text-white">
+              DONE
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+-->
+
+<!--   Test -->
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <ul class="list-group">
+        <div id="accordion">
+        <div class="card" style="width: 18rem;">
+          
+          <div class="card-header bg-danger text-white">
+            <h3>TODO <button class="btn btn-sm btn-primary"> Edit</button></h3>
+            
+            <li class="list-group-item text-dark">Task Name
+              
+            </li>
+            <li class="list-group-item text-dark">Description</li>
+            <li class="list-group-item text-dark">Assigned To</li>
+            <li class="list-group-item text-dark">Due Date</li>
+            <li class="list-group-item text-dark">Status</li>
+          </div>
+          <div class="card-header bg-danger text-white">
+            <li class="list-group-item text-dark">Task Name</li>
+            <li class="list-group-item text-dark">Description</li>
+            <li class="list-group-item text-dark">Assigned To</li>
+            <li class="list-group-item text-dark">Due Date</li>
+            <li class="list-group-item text-dark">Status</li>
+          </div>
+          <div class="card-header bg-danger text-white">
+            <li class="list-group-item text-dark">Task Name</li>
+            <li class="list-group-item text-dark">Description</li>
+            <li class="list-group-item text-dark">Assigned To</li>
+            <li class="list-group-item text-dark">Due Date</li>
+            <li class="list-group-item text-dark">Status</li>
+          </div>
+          <div class="card-header bg-danger text-white">
+            <li class="list-group-item text-dark">Task Name</li>
+            <li class="list-group-item text-dark">Description</li>
+            <li class="list-group-item text-dark">Assigned To</li>
+            <li class="list-group-item text-dark">Due Date</li>
+            <li class="list-group-item text-dark">Status</li>
+          </div>
+          <div class="card-header bg-danger text-white">
+            <li class="list-group-item text-dark">Task Name</li>
+            <li class="list-group-item text-dark">Description</li>
+            <li class="list-group-item text-dark">Assigned To</li>
+            <li class="list-group-item text-dark">Due Date</li>
+            <li class="list-group-item text-dark">Status</li>
+          </div>
+        </ul>
+     </div>
+      <div class="col-sm-3">
+        <ul class="list-group">
+          <div class="card" style="width: 18rem;">
+            
+            <div class="card-header bg-warning text-white">
+              <h3>IN PROGRESS <button class="btn btn-sm btn-primary"> Edit</button></h3>
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+            <div class="card-header bg-warning text-white">
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+            <div class="card-header bg-warning text-white">
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+            <div class="card-header bg-warning text-white">
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+            <div class="card-header bg-warning text-white">
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+          </ul>
+       </div>
+       <div class="col-sm-3">
+        <ul class="list-group">
+          <div class="card" style="width: 18rem;">
+            
+            <div class="card-header bg-primary text-white">
+              <h3>REVIEW <button class="btn btn-sm btn-danger"> Edit</button></h3>
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+            <div class="card-header bg-primary text-white">
+              
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+            <div class="card-header bg-primary text-white">
+              
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+            <div class="card-header bg-primary text-white">
+              
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+            <div class="card-header bg-primary text-white">
+              
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+          </ul>
+       </div>
+       <div class="col-sm-3">
+        <ul class="list-group">
+          <div class="card" style="width: 18rem;">
+            
+            <div class="card-header bg-success text-white">
+              <h3>DONE <button class="btn btn-sm btn-danger"> Edit</button></h3>
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+            <div class="card-header bg-success text-white">
+              
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+            <div class="card-header bg-success text-white">
+              
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+            <div class="card-header bg-success text-white">
+              
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+            <div class="card-header bg-success text-white">
+              
+              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark">Description</li>
+              <li class="list-group-item text-dark">Assigned To</li>
+              <li class="list-group-item text-dark">Due Date</li>
+              <li class="list-group-item text-dark">Status</li>
+            </div>
+          </ul>
+       </div>
+ </div>
+</div>
+      
+
+
+=======
 
     <title>Task Planner</title>
   </head>
@@ -56,5 +379,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
   </body>
 </html>
