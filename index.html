@@ -10,8 +10,13 @@
      <link rel="stylesheet" href="styles.css">
     <title>Lloyd task planner</title>
 
+    
 
-
+    <script>
+      $(function () {
+        $('#myList ').tab('show')
+      })
+    </script>
 
 
 
@@ -69,95 +74,24 @@
    <hr>
 
     
-  <!--<div class="container">
-      <div class="row">
-        <div class="col-sm-3">
-      <div class="card" style="width: 18rem;">
-        <div class="card-header text-white bg-danger">
-          TODO
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-      </div>
-      
-    </div>
-    <div class="col-sm-3">
 
-      <div class="card" style="width: 18rem;">
-        <div class="card-header bg-warning text-white">
-          IN PROGRESS
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-      </div>
-      </div>
+   <button class="btn btn-sm btn-primary " data-toggle="collapse"  id="testy" aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample">Collapse</button>
 
-      <div class="col-sm-3">
-
-        <div class="card" style="width: 18rem;">
-          <div class="card-header bg-primary text-white">
-            REVIEW
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-          </ul>
-        </div>
-        </div>
-        <div class="col-sm-3">
-
-          <div class="card" style="width: 18rem;">
-            <div class="card-header bg-success text-white">
-              DONE
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-          </div>
-          </div>
-      </div>
-    </div>
-  </div>
--->
-
-<!--   Test -->
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-3">
-      <ul class="list-group">
-        <div id="accordion">
-        <div class="card" style="width: 18rem;">
+<div class="container " id="collapseExample">  
+  <div class="row ">
+    <div class="col-sm-3 ">
+      <ul class="list-group ">
+        
+        <div class="card text-center  "  style="width: 18rem;" >
           
-          <div class="card-header bg-danger text-white">
-            <h3>TODO <button class="btn btn-sm btn-primary"> Edit</button></h3>
-            
-            <li class="list-group-item text-dark">Task Name
-              
-            </li>
+          <div class="card-header bg-danger text-white text-center " >  
+            <h3>TODO </h3>                                             <!-- Button use to be here-->
+            <li class="list-group-item text-dark " >Task Name</li>
             <li class="list-group-item text-dark">Description</li>
             <li class="list-group-item text-dark">Assigned To</li>
             <li class="list-group-item text-dark">Due Date</li>
             <li class="list-group-item text-dark">Status</li>
+          
           </div>
           <div class="card-header bg-danger text-white">
             <li class="list-group-item text-dark">Task Name</li>
@@ -187,11 +121,12 @@
             <li class="list-group-item text-dark">Due Date</li>
             <li class="list-group-item text-dark">Status</li>
           </div>
+          
         </ul>
      </div>
       <div class="col-sm-3">
         <ul class="list-group">
-          <div class="card" style="width: 18rem;">
+          <div class="card text-center"  style="width: 18rem;">
             
             <div class="card-header bg-warning text-white">
               <h3>IN PROGRESS <button class="btn btn-sm btn-primary"> Edit</button></h3>
@@ -233,7 +168,7 @@
        </div>
        <div class="col-sm-3">
         <ul class="list-group">
-          <div class="card" style="width: 18rem;">
+          <div class="card text-center" style="width: 18rem;">
             
             <div class="card-header bg-primary text-white">
               <h3>REVIEW <button class="btn btn-sm btn-danger"> Edit</button></h3>
@@ -279,11 +214,11 @@
        </div>
        <div class="col-sm-3">
         <ul class="list-group">
-          <div class="card" style="width: 18rem;">
+          <div class="card text-center" style="width: 18rem;">
             
             <div class="card-header bg-success text-white">
               <h3>DONE <button class="btn btn-sm btn-danger"> Edit</button></h3>
-              <li class="list-group-item text-dark">Task Name</li>
+              <li class="list-group-item text-dark ">Task Name</li>
               <li class="list-group-item text-dark">Description</li>
               <li class="list-group-item text-dark">Assigned To</li>
               <li class="list-group-item text-dark">Due Date</li>
@@ -322,7 +257,12 @@
               <li class="list-group-item text-dark">Status</li>
             </div>
           </ul>
+          
        </div>
+ </div>         <!-- testing zone of new code-->
+ 
+
+
  </div>
 </div>
       
