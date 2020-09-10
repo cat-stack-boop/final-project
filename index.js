@@ -15,7 +15,7 @@ today.setHours(0,0,0,0);
 userForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    if (userFormDescription .value.length > 0 && userFormDescription .value.length <= 300) {
+    if (userFormDescription .value.length > 0 && userFormDescription .value.length <= 15) {
         userFormDescription .classList.add('is-valid');
         userFormDescription .classList.remove('is-invalid');
     } else {
@@ -23,7 +23,7 @@ userForm.addEventListener('submit', (event) => {
         userFormDescription .classList.remove('is-valid');
    }
 
-   if (userFormName .value.length > 2) {
+   if (userFormName .value.length > 0 && userFormDescription .value.length <= 8) {
         userFormName .classList.add('is-valid');
         userFormName .classList.remove('is-invalid');
 } 
@@ -31,7 +31,7 @@ userForm.addEventListener('submit', (event) => {
         userFormName .classList.add('is-invalid');
         userFormName .classList.remove('is-valid');
 }
-    if (userFormAssigned .value.length > 2) {
+    if (userFormAssigned .value.length > 0 && userFormDescription .value.length <= 8) {
         userFormAssigned .classList.add('is-valid');
         userFormAssigned .classList.remove('is-invalid');
 } 
