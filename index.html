@@ -11,13 +11,10 @@
     <title>Lloyd task planner</title>
 
     
+    
 
-    <script>
-      $(function () {
-        $('#myList ').tab('show')
-      })
-    </script>
-
+   
+   
 
 
 
@@ -38,34 +35,48 @@
 
 <div class="container">
 
-    <form>
-        <div class="form-group ">
-          <label for="exampleFormControlInput1">Name</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First and last name">
+    <form novalidate id="form">
+        <div class="form-group whole-group" id="name-form"> 
+          <label for="valid-form-testy" id="name">Name</label>
+          <input type="text" class="form-control" id="name-validation" placeholder="First and last name">
+          <div class="valid-feedback"></div>
+            <div class="invalid-feedback"></div>
+          
+            
         </div>
-        <div class="form-group">
+        <div class="form-group whole-group" id="description-form">
             <label for="exampleFormControlInput1">Description</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="please describe the task to be worked on">
+            <input type="text" class="form-control" id="description-validation" placeholder="please describe the task to be worked on">
+            <div class="valid-feedback" id="test-1">Great Description!</div>
+            <div class="invalid-feedback">Ugh .. Please make sure your description is valid</div>
+
           </div>
-          <div class="form-group">
+          <div class="form-group whole-group" id="assigned-form">
             <label for="exampleFormControlInput1">Assigned to</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name of the developer to work on this task">
+            <input type="text" class="form-control" id="assigned-validation" placeholder="Name of the developer to work on this task">
+            <div class="valid-feedback" id="test-1">Great dev</div>
+            <div class="invalid-feedback">Please make sure you choose a current developer</div>
           </div>
-          <div class="form-group ">
+          <div class="form-group date-picker " id="date-form">
             <label for="exampleFormControlInput1">Due Date</label>
-            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="[dd/mm/yyyy]">
+            <input type="date" class="form-control" id="date-validation" placeholder="[dd/mm/yyyy]">
+            <div class="valid-feedback" id="test-1">Thanks for that</div>
+            <div class="invalid-feedback">Please make sure the date is valid</div>
           </div>
-        <div class="form-group">
+        <div class="form-group" id="status-form">
           <label for="exampleFormControlSelect1">Status</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>TODO</option>
+          <select class="form-control" id="status-validation">
+            <div class="valid-feedback" id="test-1">Thanks!</div>
+            <div class="invalid-feedback">Please pick one of the four statues</div>
+           
+            <option >TODO</option>
             <option>IN PROGRESS</option>
             <option>REVIEW</option>
             <option>DONE</option>
             
           </select>
         </div>
-        <button class="btn btn-danger">Submit</button>
+        <button type="submit" class="btn btn-danger" id="form-submission">Submit</button>
    
       </form>
 
@@ -77,7 +88,7 @@
 
    <button class="btn btn-sm btn-primary " data-toggle="collapse"  id="testy" aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample">Collapse</button>
 
-<div class="container " id="collapseExample">  
+<div class="container " id="collapseExample">   
   <div class="row ">
     <div class="col-sm-3 ">
       <ul class="list-group ">
@@ -86,7 +97,7 @@
           
           <div class="card-header bg-danger text-white text-center " >  
             <h3>TODO </h3>                                             <!-- Button use to be here-->
-            <li class="list-group-item text-dark " >Task Name</li>
+            <li class="list-group-item text-dark" >Task Name</li>
             <li class="list-group-item text-dark">Description</li>
             <li class="list-group-item text-dark">Assigned To</li>
             <li class="list-group-item text-dark">Due Date</li>
@@ -266,7 +277,7 @@
  </div>
 </div>
       
-
+<script src="app.js">  </script>
 
   </body>
 </html>

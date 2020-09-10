@@ -7,3 +7,13 @@ body { background-color:#ffddd2;
 ul li{ margin:10px}
 
 
+
+
+.valid-form { 
+    color:green;
+    display: hidden;
+}
+
+.invalid-form { 
+    color:red;
+}
