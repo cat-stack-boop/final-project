@@ -20,7 +20,8 @@
 
   </head>
   <body>
-    <h1 class="text-center" style="color:#a85b18">Planify- Task planner</h1>
+  
+    <!-- original h1 heading was here -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -34,7 +35,7 @@
 
 
 <div class="container">
-
+  <h1 class="text-center" style="color:#fcfaff">Planify- Task planner</h1>
     <form novalidate id="form">
 
         <div class="form-group whole-group" id="name-form"> 
@@ -78,29 +79,29 @@
             
           </select>
         </div>
-        <button type="submit" class="btn btn-danger" id="form-submission">Submit</button>
-   
+        <div class="button-flex">
+        <button type="submit" class="btn btn-danger" id="form-submission">Submit</button><button class="btn btn-sm btn-primary " data-toggle="collapse"  id="testy" aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample">Collapse</button>
+      </div>
       </form>
 
-    </div>
+    </div> <!-- Original ending of the div container-->
     
-   <hr>
+   
 
     
 
-   <button class="btn btn-sm btn-primary " data-toggle="collapse"  id="testy" aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample">Collapse</button>
+   
 
 <div class="container " id="collapseExample">   
   <div class="row ">
     <div class="col-sm-3 ">
       <ul class="list-group"  >
         
-        <div class="card text-center "  style="width: 18rem;" >
-          <div class="card-header bg-danger text-white text-center ">
-            <h3>TODO </h3>  
-          </div>
+        
+            
           
-          <div class="card-header bg-danger text-white text-center "id="renderThis"   >  
+          
+          <div id="renderThis"   >  
                                                        <!-- Button use to be here-->
             
             
@@ -111,40 +112,7 @@
         </ul>
      </div>
      
-      <div class="col-sm-3">
-        <ul class="list-group">
-          <div class="card text-center"  style="width: 18rem;">
-            
-            <div class="card-header bg-warning text-white">
-              <h3>IN PROGRESS <button class="btn btn-sm btn-primary" > Edit</button></h3>
-              
-            </div>
-            
-          </ul>
-       </div>
-       <div class="col-sm-3">
-        <ul class="list-group">
-          <div class="card text-center" style="width: 18rem;">
-            
-            <div class="card-header bg-primary text-white">
-              <h3>REVIEW <button class="btn btn-sm btn-danger"> Edit</button></h3>
-              
-            </div>
-            
-          </ul>
-       </div>
-       <div class="col-sm-3">
-        <ul class="list-group">
-          <div class="card text-center" style="width: 18rem;">
-            
-            <div class="card-header bg-success text-white">
-              <h3>DONE <button class="btn btn-sm btn-danger"> Edit</button></h3>
-              
-            </div>
-           
-          </ul>
-          
-       </div>
+     
  </div>         <!-- testing zone of new code-->
  
 

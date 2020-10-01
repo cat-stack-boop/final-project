@@ -1,6 +1,6 @@
 const createTaskHtml = (id,name,description,assignedTo,dueDate,status,) => 
-    `     
-            <li class="list-group-item text-dark"data-task-id=${id} >
+    `     <div class="cunt">
+            <li class="list-group-item text-dark task-style " data-task-id=${id} >
             <span>${name}</span>
             <hr>
             <span>${description}</span>
@@ -12,9 +12,13 @@ const createTaskHtml = (id,name,description,assignedTo,dueDate,status,) =>
             <span>${status}</span>
             <hr>
             
-            <button class="btn btn-primary done-button">Mark as done</button>
+            <button class="btn btn-primary done-button ">Mark as done</button>
+            <button class="btn btn-danger  delete-button ">Delete</button> 
+            
             </li>
+            </div> 
             `
+           
             
 ;
 
@@ -68,5 +72,36 @@ class taskManager {
             rendering.innerHTML = tasksHtml;
     }
 
-}
+
+    save() {
+                let tasksJson = localStorage.setItem('tasks', JSON.stringify(this.tasks));
+                let currentId = String(this.currentId);
+                localStorage.setItem('currentId', currentId);
+    }
+
+    load() {
+           if (localStorage.getItem('tasks')) {
+                this.tasks = JSON.parse(localStorage.getItem('tasks'))
+           } else { 
+            console.log('nothing here')
+        }
+        if (localStorage.getItem('currentId')) {
+            this.currentId= JSON.parse(localStorage.getItem('currentId'))
+       } else { 
+        console.log('nothing here')
+              }
+          } 
+    
+      deleteTask(taskId) { 
+          let newTasks = [];
+        for(let i =0; i < this.tasks.length; i++){
+            let task = this.tasks[i];
+            if(task.id !== taskId) { 
+                newTasks.push(task)
+            }
+        }
+         this.tasks = newTasks ;
+      }  
+
+};
 

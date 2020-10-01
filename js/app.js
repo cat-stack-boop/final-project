@@ -1,6 +1,8 @@
 
 const task2 = new taskManager(0);
+task2.load();
 
+task2.render();
 const form = document.querySelector('#form');
 
 
@@ -105,9 +107,18 @@ renderThis.addEventListener('click', (event) => {
        const taskId = Number(parentTask.dataset.taskId);
        const task = task2.getTaskById(taskId);
        task.status = 'DONE';
+       task2.save();
        task2.render();
+       
+       
      } 
-     
+     if(event.target.classList.contains('delete-button')){
+       const parentTask  = event.target.parentElement;
+       const taskId = Number(parentTask.dataset.taskId);
+       task2.deleteTask(taskId)
+       task2.save();
+       task2.render();
+     }
 });
 
 
