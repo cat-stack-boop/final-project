@@ -7,75 +7,115 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
      <link rel="stylesheet" href="styles.css">
-    <title>Planify- Task planner</title>
-
-
-  </head>
-  <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:240px;height:25px;"src="https://www.clocklink.com/html5embed.php?clock=017&timezone=Australia_Sydney&color=white&size=240&Title=&Message=&Target=&From=2020,1,1,0,0,0&Color=white"></iframe>
-  <body>
+    <title>Lloyd task planner</title>
 
     
-    <h1 class="text-center" style="color:#a85b18">Planify- Task planner</h1>
 
-    
-<div class="container">
-    <form id = "userForm">
-        <div class="form-group ">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="TaskName" placeholder="Task Name" onkeyup="Show();">
-           <div class="valid-feedback" id = "LabelNameValid"><span id = "nameSpanId">✔ You Beauty</span></div>
-          <div class="invalid-feedback" id = "LabelName">Please complete name section with no more than 8 characters</div>
+
+   
+   
+
+  
+    <!-- original h1 heading was here -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+
+
+
+  <h1 class="text-center" style="color:#fcfaff">Planify- Task planner</h1>
+    <form novalidate id="form">
+
+        <div class="form-group whole-group" id="name-form"> 
+          <label for="name-validation" id="name">Name</label>
+          <input type="text" class="form-control" id="name-validation" placeholder="First and last name">
+          <div class="valid-feedback"></div>
+            <div class="invalid-feedback"></div>  
         </div>
-        <div class="form-group">
-            <label for="Description">Description</label>
-            <input type="text" class="form-control" id="Description" placeholder="Please describe the task to be worked on">
-            <div class="valid-feedback"><span id= "desSpanId">✔ Legend</span></div>
-            <div class="invalid-feedback">Please complete Description section with no more than 15 characters</div>
+
+        <div class="form-group whole-group" id="description-form">
+            <label for="description-validation">Description</label>
+            <input type="text" class="form-control" id="description-validation" placeholder="please describe the task to be worked on">
+            <div class="valid-feedback" id="test-1">Great Description!</div>
+            <div class="invalid-feedback">Ugh .. Please make sure your description is valid</div>
+        </div>
+
+          <div class="form-group whole-group" id="assigned-form">
+            <label for="assigned-validation">Assigned to</label>
+            <input type="text" class="form-control" id="assigned-validation" placeholder="Name of the developer to work on this task">
+            <div class="valid-feedback" id="test-1">Great dev</div>
+            <div class="invalid-feedback">Please make sure you choose a current developer</div>
           </div>
-          <div class="form-group">
-            <label for="Assigned">Assigned to</label>
-            <input type="text" class="form-control" id="AssignedTo" placeholder="Name of the developer to work on this task">
-            <div class="valid-feedback"><span id= "assiSpanId">✔ Awesome</span></div>
-            <div class="invalid-feedback">Please complete name section with no more than 8 characters</div>
+
+          <div class="form-group date-picker " id="date-form">
+            <label for="date-validation">Due Date</label>
+            <input type="date" class="form-control" id="date-validation" placeholder="[dd/mm/yyyy]">
+            <div class="valid-feedback" id="test-1">Thanks for that</div>
+            <div class="invalid-feedback">Please make sure the date is valid</div>
           </div>
-          <div class="form-group ">
-            <label for="DueDate">Due Date</label>
-            <input type="date" class="form-control" id="DueDate" placeholder="[dd/mm/yyyy]">
-            <div class="valid-feedback"><span id= "dateSpanId">✔ Fantastic</span></div>
-            <div class="invalid-feedback">Please select a future date</div>
-          </div>
-              <!-----Remove Status-->
+
+        <div class="form-group" id="status-form">
+          <label for="status-validation">Status</label>
+          <select class="form-control" id="status-validation">
+            <div class="valid-feedback" id="test-1">Thanks!</div>
+            <div class="invalid-feedback">Please pick one of the four statues</div>
            
-              <!-----Remove Status-->
-        <button class="btn btn-danger" type = "submit" id = "btSubmit">Submit</button>
-        
+            <option>TODO</option>
+            <option>IN PROGRESS</option>
+            <option>REVIEW</option>
+            <option>DONE</option>
+            
+          </select>
+        </div>
+        <div class="button-flex">
+        <button type="submit" class="btn btn-danger" id="form-submission">Submit</button><button class="btn btn-sm btn-primary " data-toggle="collapse"  id="testy" aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample">Collapse</button>
+      </div>
       </form>
-    </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-3">
-      <ul class="list-group" id = "taskList">
-        <div id="accordion">
-        <div class="card" style="width: 18rem;">          
-          <div class="card-header bg-danger text-white">
-            <!----<h3>TODO <button class="btn btn-sm btn-primary"> Edit</button></h3>--->            
-            <li class="list-group-item text-dark">TaskName </li>        
-            <li class="list-group-item text-dark">Description</li>
-            <li class="list-group-item text-dark">AssignedTo</li>
-            <li class="list-group-item text-dark">DueDate</li>
-            </div>
-        </div>
-        </div>
+    </div> <!-- Original ending of the div container-->
+    
+   
 
+    
+
+   
+
+<div class="container " id="collapseExample">   
+  <div class="row ">
+    <div class="col-sm-3 ">
+      <ul class="list-group"  >
+        
+        
+            
+          
+          
+          <div id="renderThis"   >  
+                                                       <!-- Button use to be here-->
+            
+            
+          
+          </div>
+          
+          
         </ul>
      </div>
-      
+     
+     
+ </div>         <!-- testing zone of new code-->
+ 
+
+
  </div>
 </div>
 
+   
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -85,11 +125,14 @@
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
 
-    
-  <script src=js/taskManager.js></script>
-  <script src=js/index.js></script>
- 
 
+
+
+
+
+
+ <script src="js/taskManager.js"> </script>     
+<script src="js/app.js">  </script>
 
   </body>
 </html>
