@@ -3,58 +3,33 @@ body { background-color:#ffddd2;
     background: #FBD3E9;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #BB377D, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #BB377D, #FBD3E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
 font-family: 'Dosis', sans-serif;
     margin:15px;
-
 }
-    
     form label { color:#ffffff;}
-
-
-
 ul li{ margin:10px}
-
-
 .container { 
     background-color:#1B1D63;
-    
-    
-
-    
 }
-
 .valid-form { 
     color:green;
     display: hidden;
 }
-
 .invalid-form { 
     color:red;
 }
-
 #testy { 
     float:right;
-    
 }
-
 .button-flex { 
     display:flex;
     justify-content: space-between;
-   
-    
 }
-
 .task-style { 
-
     background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     color:white;
-   
-    
 }
-
-.cunt { 
+.cards { 
     display:flex;
+    color:white;
 }
-
