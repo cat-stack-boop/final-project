@@ -6,7 +6,20 @@ task2.render();
 const form = document.querySelector('#form');
 
 
+let today = new Date();
 
+let dd = today.getDate()+1;
+ let mm = today.getMonth()+1; //January is 0!
+ let yyyy = today.getFullYear();
+
+ if(dd<10){
+ dd='0'+dd
+ } 
+ if(mm<10){
+ mm='0'+mm
+}
+today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("date-validation").setAttribute('min', today);
 
 //let  x= document.querySelector('exampleFormControlInput1') 
 
@@ -47,55 +60,64 @@ const form = document.querySelector('#form');
     
    
 
-    if (nameValidation.value.length && descriptionValidation.value.length &&assignedValidation.value.length && dateValidation.value.length &&statusValidation.value.length > 3) {
+    if (nameValidation .value.length > 0 && nameValidation.value.length <= 8)   {      
         nameValidation.classList.add('is-valid');
         nameValidation.classList.remove('is-invalid');
-
-        task2.addTask(name, description, assignedTo, dueDate,status); // removed status
-        task2.save();
-        task2.load();
-        task2.render();
-        
-        
-            nameValidation.value = '';
-            descriptionValidation.value ='';
-            assignedValidation.value='';
-          dateValidation.value='';
-            statusValidation.value='';
-
-
-
-
-      } else if (nameValidation.value.length < 3){
+       
+      } else{
         
         nameValidation.classList.add('is-invalid');
         nameValidation.classList.remove('is-valid');
+        document.getElementById("form-submission").disabled = True;
       }
 
-      if (descriptionValidation.value.length > 5) {
+      if (descriptionValidation.value.length > 1 && descriptionValidation.value.length <= 15) {
         descriptionValidation.classList.add('is-valid');
         descriptionValidation.classList.remove('is-invalid');
-      } else if (descriptionValidation.value.length < 5){
+
+      } else {
         descriptionValidation.classList.add('is-invalid');
         descriptionValidation.classList.remove('is-valid');
+        document.getElementById("form-submission").disabled = True;
       }
 
-      if (assignedValidation.value.length > 5) {
+      if (assignedValidation.value.length > 0 && assignedValidation.value.length <= 8) {
         assignedValidation.classList.add('is-valid');
         assignedValidation.classList.remove('is-invalid');
-      } else if (assignedValidation.value.length < 3){
+      } else {
         assignedValidation.classList.add('is-invalid');
         assignedValidation.classList.remove('is-valid');
+        document.getElementById("form-submission").disabled = True;
       }
       
 
-      if (dateValidation.value.length > 6) {
+      if (dateValidation.value.length > 1) {
         dateValidation.classList.add('is-valid');
         dateValidation.classList.remove('is-invalid');
-      } else if (dateValidation.value.length < 5){
+      } else {
         dateValidation.classList.add('is-invalid'); 
         dateValidation.classList.remove('is-valid');
+        document.getElementById("form-submission").disabled = True;
       }
+
+      task2.addTask(name, description, assignedTo, dueDate,status); // removed status
+      task2.save();
+      task2.load();
+      task2.render();
+      
+      
+          nameValidation.value = '';
+          descriptionValidation.value ='';
+          assignedValidation.value='';
+          dateValidation.value='';
+          statusValidation.value='';
+
+
+
+    document.getElementById("nameSpanId").innerHTML=" ";
+    document.getElementById("desSpanId").innerHTML=" ";
+    document.getElementById("assiSpanId").innerHTML=" ";
+    document.getElementById("dateSpanId").innerHTML=" ";
 
 });
 
