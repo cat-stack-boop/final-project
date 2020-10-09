@@ -52,8 +52,10 @@ const form = document.querySelector('#form');
         nameValidation.classList.remove('is-invalid');
 
         task2.addTask(name, description, assignedTo, dueDate,status); // removed status
-
+        task2.save();
+        task2.load();
         task2.render();
+        
         
             nameValidation.value = '';
             descriptionValidation.value ='';
@@ -111,6 +113,7 @@ renderThis.addEventListener('click', (event) => {
        task2.render();
        
        
+       
      } 
      if(event.target.classList.contains('delete-button')){
        const parentTask  = event.target.parentElement;
@@ -120,7 +123,6 @@ renderThis.addEventListener('click', (event) => {
        task2.render();
      }
 });
-
 
 
 

@@ -1,6 +1,6 @@
 
 const createTaskHtml = (id,name,description,assignedTo,dueDate,status,) => 
-    `     <div class="card-wrapper">
+    `     <div class="card-wrapper" >
             <li class="list-group-item text-dark task-style " data-task-id=${id} >
             <span>${name}</span>
             <hr>
