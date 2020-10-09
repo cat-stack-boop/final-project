@@ -100,6 +100,15 @@ document.getElementById("date-validation").setAttribute('min', today);
         document.getElementById("form-submission").disabled = True;
       }
 
+      if (statusValidation.value.length > 0) {
+        statusValidation.classList.add('is-valid');
+        statusValidation.classList.remove('is-invalid');
+      } else {
+        statusValidation.classList.add('is-invalid'); 
+        statusValidation.classList.remove('is-valid');
+        document.getElementById("form-submission").disabled = True;
+      }
+
       task2.addTask(name, description, assignedTo, dueDate,status); // removed status
       task2.save();
       task2.load();
@@ -110,7 +119,7 @@ document.getElementById("date-validation").setAttribute('min', today);
           descriptionValidation.value ='';
           assignedValidation.value='';
           dateValidation.value='';
-          statusValidation.value='';
+       
 
 
 
