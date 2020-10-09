@@ -62,8 +62,8 @@ class taskManager {
             for( let i = 0; i < this.tasks.length; i++) {
                 let task = this.tasks[i];
                 let date = new Date(task.dueDate); 
-                const formattedDate = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear(); 
-                const taskHtml = createTaskHtml(task.id,task.name, task.description, task.assignedTo, formattedDate,task.status); //changed ffrom currentTask.etc
+                const dueDate = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear(); 
+                const taskHtml = createTaskHtml(task.id,task.name, task.description, task.assignedTo, dueDate,task.status); //changed ffrom currentTask.etc
                 tasksHtmlList.push(taskHtml);
 
             }
@@ -105,4 +105,6 @@ class taskManager {
       }  
 
 };
+
+
 
