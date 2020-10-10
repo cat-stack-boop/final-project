@@ -29,7 +29,7 @@ describe('TaskManager', () => {
           status: 'TODO'
         };
 
-        task2.addTask(task.name, task.description, task.assignedTo, task.dueDate);
+        task2.addTask(task.name, task.description, task.assignedTo, task.dueDate,task.status);
 
         expect(task2.tasks[0]).toEqual(task);
       });
@@ -46,7 +46,7 @@ describe('TaskManager', () => {
           status: 'TODO'
         };
 
-        task2.addTask(task.name, task.description, task.assignedTo, task.dueDate);
+        task2.addTask(task.name, task.description, task.assignedTo, task.dueDate,task.status);
 
         expect(task2.currentId).toBe(11);
       });
@@ -91,7 +91,7 @@ describe('TaskManager', () => {
           status: 'TODO'
         };
 
-        task2.addTask(task.name, task.description, task.assignedTo, task.dueDate);
+        task2.addTask(task.name, task.description, task.assignedTo, task.dueDate,task.status);
 
         const result = task2.getTaskById(task.id);
 
@@ -115,7 +115,7 @@ describe('TaskManager', () => {
           status: 'TODO'
         };
 
-        task2.addTask(task.name, task.description, task.assignedTo, task.dueDate);
+        task2.addTask(task.name, task.description, task.assignedTo, task.dueDate,task.status);
 
         const tasksList = { innerHTML: '' };
 
@@ -125,14 +125,13 @@ describe('TaskManager', () => {
         task2.render();
 
         
-        expect(tasksList.innerHTML).toContain('<li class="list-group-item" data-task-id=0>');
-        expect(tasksList.innerHTML).toContain('<h5>test</h5>');
-        expect(tasksList.innerHTML).toContain('<span class="badge badge-danger">TODO</span>');
-        expect(tasksList.innerHTML).toContain('<small>Assigned To: test</small>');
-        expect(tasksList.innerHTML).toContain('<small>Due: 30/9/2020</small>');
-        expect(tasksList.innerHTML).toContain('<p>test</p>');
-        expect(tasksList.innerHTML).toContain('<button class="btn btn-outline-success done-button mr-1 visible">Mark As Done</button>');
-        expect(tasksList.innerHTML).toContain('<button class="btn btn-outline-danger delete-button">Delete</button>');
+       
+        expect(tasksList.innerHTML).toContain('<span>test</span>');
+        expect(tasksList.innerHTML).toContain('<span>test</span>');
+        expect(tasksList.innerHTML).toContain('<span>test</span>');
+        expect(tasksList.innerHTML).toContain('<span>30/9/2020</span>');
+        expect(tasksList.innerHTML).toContain('<span>TODO</span>');
+      
       });
     });
   });
@@ -151,7 +150,7 @@ describe('TaskManager', () => {
           status: 'TODO'
         };
 
-        task2.addTask(task.name, task.description, task.assignedTo, task.dueDate);
+        task2.addTask(task.name, task.description, task.assignedTo, task.dueDate,task.status);
 
         // create JSON of the task in an array
         const tasksJson = JSON.stringify([task]);

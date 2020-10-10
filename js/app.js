@@ -60,7 +60,7 @@ document.getElementById("date-validation").setAttribute('min', today);
     
    
 
-    if (nameValidation .value.length > 0 && nameValidation.value.length <= 8)   {      
+    if (nameValidation .value.length > 0 && nameValidation.value.length <= 15)   {      
         nameValidation.classList.add('is-valid');
         nameValidation.classList.remove('is-invalid');
        
@@ -71,7 +71,11 @@ document.getElementById("date-validation").setAttribute('min', today);
         document.getElementById("form-submission").disabled = True;
       }
 
+<<<<<<< HEAD
       if (descriptionValidation.value.length > 1 && descriptionValidation.value.length <= 40) {
+=======
+      if (descriptionValidation.value.length > 1 && descriptionValidation.value.length <= 30) {
+>>>>>>> 3061d1da421746f1f8fd75a628ae98ded6dbc0d0
         descriptionValidation.classList.add('is-valid');
         descriptionValidation.classList.remove('is-invalid');
 
@@ -119,6 +123,7 @@ document.getElementById("date-validation").setAttribute('min', today);
           descriptionValidation.value ='';
           assignedValidation.value='';
           dateValidation.value='';
+          
        
 
 
