@@ -60,7 +60,7 @@ document.getElementById("date-validation").setAttribute('min', today);
     
    
 
-    if (nameValidation .value.length > 0 && nameValidation.value.length <= 8)   {      
+    if (nameValidation .value.length > 0 && nameValidation.value.length <= 15)   {      
         nameValidation.classList.add('is-valid');
         nameValidation.classList.remove('is-invalid');
        
