@@ -71,11 +71,9 @@ document.getElementById("date-validation").setAttribute('min', today);
         document.getElementById("form-submission").disabled = True;
       }
 
-<<<<<<< HEAD
-      if (descriptionValidation.value.length > 1 && descriptionValidation.value.length <= 40) {
-=======
+
       if (descriptionValidation.value.length > 1 && descriptionValidation.value.length <= 30) {
->>>>>>> 3061d1da421746f1f8fd75a628ae98ded6dbc0d0
+
         descriptionValidation.classList.add('is-valid');
         descriptionValidation.classList.remove('is-invalid');
 

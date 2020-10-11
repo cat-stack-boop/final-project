@@ -1,78 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-     <link rel="stylesheet" href="styles.css">
-    <title>☮Planify- Task planner</title>
-  </head>
-  <body>
-    <!-- original h1 heading was here -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-<div class="container">
-  <h1 class="text-center" style="color:#fcfaff">☮Planify- Task planner</h1>
-    <form id="form">
-        <div class="form-group whole-group" id="name-form"> 
-          <label for="name-validation" id="name">Name</label>
-          <input type="text" class="form-control" id="name-validation" placeholder="First and last name">
-          <div class="valid-feedback"><span id = "nameSpanId">✔ You Beauty</span></div>
-          <div class="invalid-feedback" id = "LabelName">Please complete name section with no more than 15 characters</div>  
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Pacifico&display=swap" rel="stylesheet">
+
+<title>Planify</title>
+</head>
+<body>
+    <div class="container-fluid text-center bg-primary text-white ">
+            <nav class="navbar d-flex text-white justify-content-end">
+                <a href="#" class="text-white push-left navbar-brand mr-auto">Planify</a>
+                <a href="#" class="text-white ">Home</a>
+                <a href ="aboutus.html" class="text-white">About us</a>
+            </nav>
+            
+            
+    </div>
+    <div class="jumbotron">
+        <h1 class="text-center text-primary">Plan better, with Planify <i class="far fa-check-circle"></i>
+            </span></h1>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <img src="https://www.liquidlight.co.uk/fileadmin/uploads/ll/Photos/Img_blog/2019/Slack_illustration.jpeg" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6 text-center">
+                        <h1><span style="color:red">Collaboration</span> at the forefront.</h1>
+                        <p>An easy and intuitive design to assign tasks, no matter the size of the team.</p>
+                    </div>
+            </div>
+            <div class="row align-items-center ">
+                <div class="col-sm-6">
+                    <h1>Makes things <span style="color:rgb(247, 150, 6)">simple</span> again.</h1>
+                    <p>Let planify take care of the little things so you focus on the bigger picture</p>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <img src="https://i.pinimg.com/originals/a8/d4/e8/a8d4e81985b0585484e74e4ba505bf86.png" class="img-fluid">
+                    
+                </div>
+            </div>
         </div>
-        <div class="form-group whole-group" id="description-form">
-            <label for="description-validation">Description</label>
-            <input type="text" class="form-control" id="description-validation" placeholder="Please describe the task to be worked on - max 30 char">
-            <div class="valid-feedback" id="test-1"><span id= "desSpanId">✔ Great Description!</span></div>
-            <div class="invalid-feedback">Ugh .. Please make sure your description is valid and no more than 30 characters</div>
-        </div>
-          <div class="form-group whole-group" id="assigned-form">
-            <label for="assigned-validation">Assigned to</label>
-            <input type="text" class="form-control" id="assigned-validation" placeholder="Name of the developer to work on this task">
-            <div class="valid-feedback" id="test-1"><span id= "assiSpanId">✔ Great dev</span></div>
-            <div class="invalid-feedback">Please make sure you choose a current developer</div>
-          </div>
-          <div class="form-group date-picker " id="date-form">
-            <label for="date-validation">Due Date</label>
-            <input type="date" class="form-control" id="date-validation" placeholder="[dd/mm/yyyy]" min='1899-01-01'>
-            <div class="valid-feedback" id="test-1"><span id= "dateSpanId">✔ Thanks for that</span></div>
-            <div class="invalid-feedback">Please select a future date</div>
-          </div>
-        <div class="form-group" id="status-form">
-          <label for="status-validation">Status</label>
-          <select class="form-control" id="status-validation">
-            <div class="valid-feedback" id="test-1">Thanks!</div>
-            <div class="invalid-feedback">Please pick one of the four statues</div>
-            <option>TODO</option>
-            <option>IN PROGRESS</option>
-            <option>REVIEW</option>
-            <option>DONE</option>
-          </select>
-        </div>
-        <div class="button-flex">
-        <button type="submit" class="btn btn-danger" id="form-submission">Submit</button><button class="btn btn-sm btn-primary " data-toggle="collapse"  id="testy" aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample">Collapse</button>
+    </div>
+    <div class="container"  >
+          <form id="form">
+              <div class="form-group whole-group" id="name-form"> 
+                <label for="name-validation" id="name">Name</label>
+                <input type="text" class="form-control" id="name-validation" placeholder="First and last name">
+                <div class="valid-feedback"><span id = "nameSpanId">✔ You Beauty</span></div>
+                <div class="invalid-feedback" id = "LabelName">Please complete name section with no more than 15 characters</div>  
+              </div>
+              <div class="form-group whole-group" id="description-form">
+                  <label for="description-validation">Description</label>
+                  <input type="text" class="form-control" id="description-validation" placeholder="Please describe the task to be worked on - max 30 char">
+                  <div class="valid-feedback" id="test-1"><span id= "desSpanId">✔ Great Description!</span></div>
+                  <div class="invalid-feedback">Ugh .. Please make sure your description is valid and no more than 30 characters</div>
+              </div>
+                <div class="form-group whole-group" id="assigned-form">
+                  <label for="assigned-validation">Assigned to</label>
+                  <input type="text" class="form-control" id="assigned-validation" placeholder="Name of the developer to work on this task">
+                  <div class="valid-feedback" id="test-1"><span id= "assiSpanId">✔ Great dev</span></div>
+                  <div class="invalid-feedback">Please make sure you choose a current developer</div>
+                </div>
+                <div class="form-group date-picker " id="date-form">
+                  <label for="date-validation">Due Date</label>
+                  <input type="date" class="form-control" id="date-validation" placeholder="[dd/mm/yyyy]" min='1899-01-01'>
+                  <div class="valid-feedback" id="test-1"><span id= "dateSpanId">✔ Thanks for that</span></div>
+                  <div class="invalid-feedback">Please select a future date</div>
+                </div>
+              <div class="form-group" id="status-form">
+                <label for="status-validation">Status</label>
+                <select class="form-control" id="status-validation">
+                  <div class="valid-feedback" id="test-1">Thanks!</div>
+                  <div class="invalid-feedback">Please pick one of the four statues</div>
+                  <option>TODO</option>
+                  <option>IN PROGRESS</option>
+                  <option>REVIEW</option>
+                  <option>DONE</option>
+                </select>
+              </div>
+              <div class="button-flex">
+              <button type="click" class="btn btn-danger" id="form-submission">Submit</button><button class="btn btn-sm btn-primary " data-toggle="collapse"  id="testy" aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample">Collapse</button>
+            </div>
+            </form>
+          </div> <!-- Original ending of the div container-->
+      <div class="container  " id="collapseExample ">   
+        <div class="row ">
+          <div class="col-sm-12 ">
+            <ul class="list-group text-center"  >
+                <div id="renderThis" class="d-flex flex-row flex-wrap  "   >  
+                                                             <!-- Button use to be here-->
+                </div>
+              </ul>
+           </div>
+       </div>      
+          <!-- testing zone of new code-->
+       </div>
       </div>
-      </form>
-    </div> <!-- Original ending of the div container-->
-<div class="container  " id="collapseExample">   
-  <div class="row ">
-    <div class="col-sm-12 ">
-      <ul class="list-group text-center"  >
-          <div id="renderThis" class="d-flex flex-row flex-wrap "   >  
-                                                       <!-- Button use to be here-->
-          </div>
-        </ul>
-     </div>
- </div>         <!-- testing zone of new code-->
- </div>
-</div>
- <script src="js/taskManager.js"> </script>     
+      <footer>
+          <nav class="navbar bg-primary text-white d-flex justify-content-around">
+              <p>©2020</p>
+              <p>Made with <i class="fas fa-heart"></i> in Melbourne</p>
+          </nav>
+      </footer>
+<script src="js/taskManager.js"> </script>     
 <script src="js/app.js">  </script>
-  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
