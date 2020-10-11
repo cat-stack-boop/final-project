@@ -13,22 +13,40 @@
       rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Pacifico&display=swap" rel="stylesheet">
 
-<title>Planify</title>
+<title>☮Planify</title>
 </head>
 <body>
-    <div class="container-fluid text-center bg-primary text-white ">
-            <nav class="navbar d-flex text-white justify-content-end">
-                <a href="#" class="text-white push-left navbar-brand mr-auto">Planify</a>
-                <a href="#" class="text-white ">Home</a>
-                <a href ="aboutus.html" class="text-white">About us</a>
+    <div class="container-fluid">      
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a href=#form class="text-white push-left navbar-brand mr-auto">☮ Planify</a>
+                  <button class ="navbar-toggler" type ="button" data-toggle="collapse"data-target="#navbarSupportedContent">
+                    <span class ="navbar-toggler-icon"></span>
+                  </button>
+  
+              <div class ="collapse navbar-collapse "id="navbarSupportedContent">
+                 <ul class ="navbar-nav ml-auto ">
+                      <li class="nav-item">
+                         <a href="#" class="text-white ">Home</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a href="#form" class="text-white ">Form</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a href ="aboutus.html" class="text-white">About Us</a>
+                      </li>                  
+                </ul> 
             </nav>
-            
-            
-    </div>
-    <div class="jumbotron">
-        <h1 class="text-center text-primary">Plan better, with Planify <i class="far fa-check-circle"></i>
-            </span></h1>
-    </div>
+
+              <div class="jumbotron">
+                <h1 class="text-center text-primary">Plan better, with Planify <i class="far fa-check-circle"></i></h1>
+                </div>  
+      </div>                 
+             
+    
+
+
     <div class="container-fluid">
         <div class="container">
             <div class="row align-items-center">
@@ -52,60 +70,74 @@
             </div>
         </div>
     </div>
-    <div class="container"  >
+       
+    <div class="container" id = "container-form">
           <form id="form">
               <div class="form-group whole-group" id="name-form"> 
-                <label for="name-validation" id="name">Name</label>
-                <input type="text" class="form-control" id="name-validation" placeholder="First and last name - max 15 char">
-                <div class="valid-feedback"><span id = "nameSpanId">✔ You Beauty</span></div>
-                <div class="invalid-feedback" id = "LabelName">Please complete name section with no more than 15 characters</div>  
+                  <label for="name-validation" id="name">Name</label>
+                      <input type="text" class="form-control" id="name-validation"  placeholder="First and last name - max 15 char">
+                         <div class="valid-feedback"><span id = "nameSpanId">✔ You Beauty</span></div>
+                            <div class="invalid-feedback" id = "LabelName">Please complete name section with no more than 15 characters</div>  
               </div>
+              
               <div class="form-group whole-group" id="description-form">
                   <label for="description-validation">Description</label>
-                  <input type="text" class="form-control" id="description-validation" placeholder="Please describe the task to be worked on - Max 30 char">
-                  <div class="valid-feedback" id="test-1"><span id= "desSpanId">✔ Great Description!</span></div>
-                  <div class="invalid-feedback">Ugh .. Please make sure your description is valid and no more than 30 characters</div>
+                      <input type="text" class="form-control" id="description-validation" placeholder="Please describe the task to be worked on - Max 30 char">
+                        <div class="valid-feedback" id="test-1"><span id= "desSpanId">✔ Great Description!</span></div>
+                          <div class="invalid-feedback">Ugh .. Please make sure your description is valid and no more than 30 characters</div>
               </div>
-                <div class="form-group whole-group" id="assigned-form">
+              
+              <div class="form-group whole-group" id="assigned-form">
                   <label for="assigned-validation">Assigned to</label>
-                  <input type="text" class="form-control" id="assigned-validation" placeholder="Name of the developer to work on this task - max 15 char">
-                  <div class="valid-feedback" id="test-1"><span id= "assiSpanId">✔ Great dev</span></div>
-                  <div class="invalid-feedback">Please make sure you choose a current developer</div>
-                </div>
-                <div class="form-group date-picker " id="date-form">
-                  <label for="date-validation">Due Date</label>
-                  <input type="date" class="form-control" id="date-validation" placeholder="[dd/mm/yyyy]" min='1899-01-01'>
-                  <div class="valid-feedback" id="test-1"><span id= "dateSpanId">✔ Thanks for that</span></div>
-                  <div class="invalid-feedback">Please select a future date</div>
-                </div>
-              <div class="form-group" id="status-form">
-                <label for="status-validation">Status</label>
-                <select class="form-control" id="status-validation">
-                  <div class="valid-feedback" id="test-1">Thanks!</div>
-                  <div class="invalid-feedback">Please pick one of the four status</div>
-                  <option>TODO</option>
-                  <option>IN PROGRESS</option>
-                  <option>REVIEW</option>
-                  <option>DONE</option>
-                </select>
+                      <input type="text" class="form-control" id="assigned-validation" placeholder="Name of the developer to work on this task - max 15 char">
+                        <div class="valid-feedback" id="test-1"><span id= "assiSpanId">✔ Great dev</span></div>
+                          <div class="invalid-feedback">Please make sure you choose a current developer</div>
               </div>
+
+              <div class="form-group date-picker " id="date-form">
+                  <label for="date-validation">Due Date</label>
+                    <input type="date" class="form-control" id="date-validation" placeholder="[dd/mm/yyyy]" min='1899-01-01'>
+                      <div class="valid-feedback" id="test-1"><span id= "dateSpanId">✔ Thanks for that</span></div>
+                        <div class="invalid-feedback">Please select a future date</div>
+              </div>
+              
+              <div class="form-group" id="status-form">
+                  <label for="status-validation">Status</label>
+                    <select class="form-control" id="status-validation">
+                      <div class="valid-feedback" id="test-1">Thanks!</div>
+                        <div class="invalid-feedback">Please pick one of the four status</div>
+                          <option>TODO</option>
+                          <option>IN PROGRESS</option>
+                          <option>REVIEW</option>
+                          <option>DONE</option>
+                    </select>
+              </div>
+             
               <div class="button-flex">
-              <button type="click" class="btn btn-danger" id="form-submission">Submit</button><hr><button class="btn btn-sm btn-primary " data-toggle="collapse"  id="testy" aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample">Collapse</button>
-            </div>
+                 <button type="click" class="btn btn-danger" id="form-submission">Submit</button>
+                 <button type="button" class="btn btn-sm btn-primary " data-toggle="collapse"  id="testy" aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample">Collapse</button>
+                 
             
-            </form>
-          </div> <!-- Original ending of the div container-->
-      <div class="container" id="collapseExample">   
+                </div>                         
+        </form>
+
+    </div> <!-- Original ending of the div container-->
+         
+
+      <div class="container collapse in" id="collapseExample">   
         <div class="row ">
           <div class="col-sm-12 ">
             <ul class="list-group text-center"  >
-                <div id="renderThis" class="d-flex flex-row flex-wrap  "   >  
-                                                             <!-- Button use to be here-->
+                <div id="renderThis" class="d-flex flex-row flex-wrap ">  
+        <!-- Button use to be here-->
                 </div>
               </ul>
            </div>
        </div>      
           <!-- testing zone of new code-->
+          <div class="button-flex">        
+            <button type="button" class="btn btn-sm btn-primary " data-toggle="collapse"  id="testy" aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample">Collapse</button>
+          </div> 
        </div>
       </div>
       <footer>

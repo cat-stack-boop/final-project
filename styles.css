@@ -1,42 +1,66 @@
 
 body { 
 
-font-family: 'Dosis', sans-serif;
-    margin:15px;
-    
+    font-family: 'Dosis', sans-serif;
+    margin:15px;   
     
 }
 
 
 nav a { 
+
     margin:10px;
+    
 }
-    form label { color:#000000;
-        margin:5px;
-        padding:2px;
-                 }
 
-                 form { 
+form label { 
+    color:#000000;
+    margin-left: 10px ;
+    padding:2px;
+    font-size: large;
+     }
+
+form { 
                     
-                    box-shadow:5px 2px 2px rgba(0, 0, 0, 0.05), 
-                    0px 6px 6px rgba(0, 0, 0, 0.1),
-                    0px 8px 8px rgba(0, 0, 0, 0.05), 
-                    0px 10px 15px rgba(0, 0, 0, 0.03),
-                    0px 30px 30px rgba(0, 0, 0, 0.15),
-                    0px 70px 60px rgba(0, 0, 0, 0.15);
-                    background-color: rgba(245, 245,245);
-                 }
+    box-shadow:5px 2px 2px rgba(0, 0, 0, 0.05), 
+                0px 6px 6px rgba(0, 0, 0, 0.1),
+                0px 8px 8px rgba(0, 0, 0, 0.05), 
+                0px 10px 15px rgba(0, 0, 0, 0.03),
+                0px 30px 30px rgba(0, 0, 0, 0.15),
+                0px 70px 60px rgba(0, 0, 0, 0.15);
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px 10px 10px 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top:10px;
+    }
 
-                 fa-heart
+    .form-control{
+
+        border-radius: 20px 0px 20px 0px ;
+        text-shadow: 3px rgb(61, 61, 61);
+        box-shadow: 5px rgb(153, 152, 152);
+        border-color: rgb(177, 177, 167);
+        cursor: pointer;         
+        
+    }
+
+
+              
 .jumbotron { 
-    background-color: rgba(245, 245,245);
-}
+    background-color: rgba(245, 245,245); 
+    box-shadow: 0px 5px rgb(153, 152, 152);
+    
+      
+    }
+    
+
 
 
 ul li{ margin:10px}
-.container { 
-  
-}
+
 .valid-form { 
     color:green;
     display: hidden;
@@ -74,8 +98,7 @@ ul li{ margin:10px}
     display:flex;
     color:white;
     box-shadow: 3px 5px rgba(129, 128, 128, 0.5);
-    box-shadow: 10px 10px 5px grey;
-    
+        
 }
 
 
@@ -86,10 +109,18 @@ text-transform:capitalize;
 
 }
 
-.container {
-
-   
+#container-form {
+ 
+    border-radius: 20px 20px 20px 20px;
+    background-color: ivory;
+    
 }
+#collapseExample{ 
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(241, 241, 229,0.5);
+    box-shadow: 5px rgb(153, 152, 152);
+}
+
 
 .fa-heart {color:red}
 
@@ -101,10 +132,8 @@ text-transform:capitalize;
     font-size: 35px;
 }
 
-.form-control{
 
-    border-radius: 20px 0px 20px 0px ;
-    margin-left: 0px ;
-    margin-right:0px;
-    text-shadow: 3px rgb(61, 61, 61);
+
+nav{
+    box-shadow: 0px 5px  rgb(153, 152, 152);
 }
