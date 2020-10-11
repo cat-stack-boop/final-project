@@ -83,7 +83,7 @@ document.getElementById("date-validation").setAttribute('min', today);
         document.getElementById("form-submission").disabled = True;
       }
 
-      if (assignedValidation.value.length > 0 && assignedValidation.value.length <= 8) {
+      if (assignedValidation.value.length > 0 && assignedValidation.value.length <= 15) {
         assignedValidation.classList.add('is-valid');
         assignedValidation.classList.remove('is-invalid');
       } else {

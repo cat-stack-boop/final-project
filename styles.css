@@ -100,3 +100,11 @@ text-transform:capitalize;
     font-family: 'Kalam', cursive;
     font-size: 35px;
 }
+
+.form-control{
+
+    border-radius: 20px 0px 20px 0px ;
+    margin-left: 0px ;
+    margin-right:0px;
+    text-shadow: 3px rgb(61, 61, 61);
+}
