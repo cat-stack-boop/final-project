@@ -71,7 +71,9 @@ document.getElementById("date-validation").setAttribute('min', today);
         document.getElementById("form-submission").disabled = True;
       }
 
+
       if (descriptionValidation.value.length > 1 && descriptionValidation.value.length <= 30) {
+
         descriptionValidation.classList.add('is-valid');
         descriptionValidation.classList.remove('is-invalid');
 

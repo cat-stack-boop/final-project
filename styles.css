@@ -1,18 +1,66 @@
 
-body { background-color:#ffddd2;
-    background: #FBD3E9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #BB377D, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #BB377D, #FBD3E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-font-family: 'Dosis', sans-serif;
-    margin:15px;
+body { 
+
+    font-family: 'Dosis', sans-serif;
+    margin:15px;   
     
-    text-shadow: 2px 2px 4px #8a8787;
 }
-    form label { color:#ffffff;}
+
+
+nav a { 
+
+    margin:10px;
+    
+}
+
+form label { 
+    color:#000000;
+    margin-left: 10px ;
+    padding:2px;
+    font-size: large;
+     }
+
+form { 
+                    
+    box-shadow:5px 2px 2px rgba(0, 0, 0, 0.05), 
+                0px 6px 6px rgba(0, 0, 0, 0.1),
+                0px 8px 8px rgba(0, 0, 0, 0.05), 
+                0px 10px 15px rgba(0, 0, 0, 0.03),
+                0px 30px 30px rgba(0, 0, 0, 0.15),
+                0px 70px 60px rgba(0, 0, 0, 0.15);
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px 10px 10px 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top:10px;
+    }
+
+    .form-control{
+
+        border-radius: 20px 0px 20px 0px ;
+        text-shadow: 3px rgb(61, 61, 61);
+        box-shadow: 5px rgb(153, 152, 152);
+        border-color: rgb(177, 177, 167);
+        cursor: pointer;         
+        
+    }
+
+
+              
+.jumbotron { 
+    background-color: rgba(245, 245,245); 
+    box-shadow: 0px 5px rgb(153, 152, 152);
+    
+      
+    }
+    
+
+
+
 ul li{ margin:10px}
-.container { 
-    background-color:#1B1D63;
-}
+
 .valid-form { 
     color:green;
     display: hidden;
@@ -39,22 +87,21 @@ ul li{ margin:10px}
 .task-style { 
     background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     color:white;
+    box-shadow:5px 2px 2px rgba(0, 0, 0, 0.05), 
+    0px 6px 6px rgba(0, 0, 0, 0.1),
+    0px 8px 8px rgba(0, 0, 0, 0.05), 
+    0px 10px 15px rgba(0, 0, 0, 0.03),
+    0px 30px 30px rgba(0, 0, 0, 0.15),
+    0px 70px 60px rgba(0, 0, 0, 0.15);
 }
 .cards { 
     display:flex;
     color:white;
     box-shadow: 3px 5px rgba(129, 128, 128, 0.5);
-    box-shadow: 10px 10px 5px grey;
+        
 }
 
-.form-control {
-    border-radius: 20px 0px 20px 0px;
-    border:none;
-    outline:none;
-    text-shadow: 2px 10px rgba(241, 235, 235, 0.5);
-    box-shadow: 3px 3px rgba(77, 74, 74, 0.5);
-    cursor: pointer;
-}
+
 
 #name-validation, #assigned-validation {
 
@@ -62,9 +109,32 @@ text-transform:capitalize;
 
 }
 
-.container {
-
-    box-shadow: 10px 10px 5px rgb(44, 43, 43);
+#container-form {
+ 
     border-radius: 20px 20px 20px 20px;
+    background-color: ivory;
+    
+}
+#collapseExample{ 
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(241, 241, 229,0.5);
+    box-shadow: 5px rgb(153, 152, 152);
+}
+
+
+.fa-heart {color:red}
+
+.fa-check-circle { color:green;
+}
+
+.navbar-brand { 
+    font-family: 'Kalam', cursive;
+    font-size: 35px;
+}
+
+
+
+nav{
+    box-shadow: 0px 5px  rgb(153, 152, 152);
 }
 
