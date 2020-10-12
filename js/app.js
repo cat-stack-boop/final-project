@@ -72,7 +72,7 @@ document.getElementById("date-validation").setAttribute('min', today);
       }
 
 
-      if (descriptionValidation.value.length > 1 && descriptionValidation.value.length <= 30) {
+      if (descriptionValidation.value.length > 5 && descriptionValidation.value.length <= 30) {
 
         descriptionValidation.classList.add('is-valid');
         descriptionValidation.classList.remove('is-invalid');
