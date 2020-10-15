@@ -159,7 +159,16 @@ renderThis.addEventListener('click', (event) => {
 });
 
 
+const myCollapseBtn =()=>  {
+  let x = document.getElementById("x")
+  let y = document.getElementById("x1")
 
+  if (x.innerHTML === "Collapse") {
+    x.innerHTML = "Show List!",y.innerHTML = "Show List!" ;
+  } else {
+    x.innerHTML = "Collapse",y.innerHTML = "Collapse";
+  }
+}
 
 
 //task manager functions below 
