@@ -74,23 +74,23 @@
           <form id="form">
               <div class="form-group whole-group" id="name-form"> 
                   <label for="name-validation" id="name">Name</label>
-                      <input type="text" class="form-control" id="name-validation"  placeholder="First and last name - max 15 char">
+                      <input type="text" class="form-control" id="name-validation"  placeholder="First and last name - between 3 - 15 char">
                          <div class="valid-feedback"><span id = "nameSpanId">✔ You Beauty</span></div>
-                            <div class="invalid-feedback" id = "LabelName">Please complete name section with no more than 15 characters</div>  
+                            <div class="invalid-feedback" id = "LabelName">Please complete name section with 3 - 15 chars </div>  
               </div>
               
               <div class="form-group whole-group" id="description-form">
                   <label for="description-validation">Description</label>
                       <input type="text" class="form-control" id="description-validation" placeholder="Please describe the task to be worked on - between 5 - 30 char">
                         <div class="valid-feedback" id="test-1"><span id= "desSpanId">✔ Great Description!</span></div>
-                          <div class="invalid-feedback">Ugh .. Please make sure your description is valid and no more than 30 characters</div>
+                          <div class="invalid-feedback">Ugh .. Please make sure your description is valid and has 5 - 30 chars</div>
               </div>
               
               <div class="form-group whole-group" id="assigned-form">
                   <label for="assigned-validation">Assigned to</label>
-                      <input type="text" class="form-control" id="assigned-validation" placeholder="Name of the developer to work on this task - max 15 char">
+                      <input type="text" class="form-control" id="assigned-validation" placeholder="Name of the developer to work on this task - between 3 - 15 char">
                         <div class="valid-feedback" id="test-1"><span id= "assiSpanId">✔ Great dev</span></div>
-                          <div class="invalid-feedback">Please make sure you choose a current developer</div>
+                          <div class="invalid-feedback">Please complete assigned to section with 3 - 15 chars</div>
               </div>
 
               <div class="form-group date-picker " id="date-form">
@@ -114,7 +114,7 @@
              
               <div class="button-flex">
                  <button type="click" class="btn btn-danger" id="form-submission">Submit</button>
-                 <button type="button" class="btn btn-sm btn-primary " data-toggle="collapse"  id="testy" aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample">Collapse</button>
+                 <button onclick="myCollapseBtn()" type="button" class="btn btn-sm btn-primary " data-toggle="collapse"  id="testy" aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample"><span id ="x" >Collapse</span></button>
                  
             
                 </div>                         
@@ -136,7 +136,7 @@
        </div>      
           <!-- testing zone of new code-->
           <div class="button-flex">        
-            <button type="button" class="btn btn-sm btn-primary " data-toggle="collapse"  id="testy" aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample">Collapse</button>
+            <button onclick="myCollapseBtn()" type="button"  class="btn btn-sm btn-primary " data-toggle="collapse"  id="testy" aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample"><span id ="x1" >Collapse</span></button>
           </div> 
        </div>
       </div>
@@ -148,8 +148,11 @@
       </footer>
 <script src="js/taskManager.js"> </script>     
 <script src="js/app.js">  </script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </body>
 </html>

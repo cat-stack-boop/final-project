@@ -60,7 +60,7 @@ document.getElementById("date-validation").setAttribute('min', today);
     
    
 
-    if (nameValidation .value.length > 0 && nameValidation.value.length <= 15)   {      
+    if (nameValidation .value.length > 3 && nameValidation.value.length <= 15)   {      
         nameValidation.classList.add('is-valid');
         nameValidation.classList.remove('is-invalid');
        
@@ -83,7 +83,7 @@ document.getElementById("date-validation").setAttribute('min', today);
         document.getElementById("form-submission").disabled = True;
       }
 
-      if (assignedValidation.value.length > 0 && assignedValidation.value.length <= 15) {
+      if (assignedValidation.value.length > 3 && assignedValidation.value.length <= 15) {
         assignedValidation.classList.add('is-valid');
         assignedValidation.classList.remove('is-invalid');
       } else {
@@ -159,7 +159,16 @@ renderThis.addEventListener('click', (event) => {
 });
 
 
+const myCollapseBtn =()=>  {
+  let x = document.getElementById("x")
+  let y = document.getElementById("x1")
 
+  if (x.innerHTML === "Collapse") {
+    x.innerHTML = "Show List!",y.innerHTML = "Show List!" ;
+  } else {
+    x.innerHTML = "Collapse",y.innerHTML = "Collapse";
+  }
+}
 
 
 //task manager functions below 
